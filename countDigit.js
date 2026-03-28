@@ -24,21 +24,21 @@ Note that 121 has twice the digit 1.
 */
 
 function nbDig(n, d) {
-    const resultArr = [];
-    let counter = 0;  
-  
-    for (let i = 0; i <= n; i++) {
-      resultArr.push(i ** 2);
-    }
-    
-    resultArr.forEach(el => {
-      for (let i = 1; i <= String(el).length; i++) {
-        let currentDigit = Math.floor(el / 10 ** (String(el).length - i) % 10);
-        if (currentDigit == d) {
-          counter++;
-        }
+  const resultArr = [];
+  let counter = 0;
+
+  for (let i = 0; i <= n; i++) {
+    resultArr.push(i ** 2);
+  }
+
+  resultArr.forEach(number => {
+    for (let i = 1; i <= String(number).length; i++) {
+      let currentDigit = Math.floor(number / 10 ** (String(number).length - i) % 10);
+      if (currentDigit == d) {
+        counter++;
       }
-    })
-  
-   return counter;
+    }
+  })
+
+  return counter;
 }
