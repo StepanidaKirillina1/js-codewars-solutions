@@ -1,0 +1,1 @@
+The repository with my solutions to kata challenges from the Codewars platform.
