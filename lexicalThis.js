@@ -11,7 +11,7 @@ Return the person object with the Name, Friends and FillFriends function filled 
 
 */
 
-const Person = function () {
+const Person = function() {
     const person = {
         _name: "Leroy",
         _friends: [],
